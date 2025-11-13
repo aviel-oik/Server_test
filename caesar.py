@@ -10,9 +10,6 @@ def caesar_encrypt(text, offset):
             encrypted += " "
     return encrypted
 
-print(caesar_encrypt("mubsecu aetaet", 16))
-
-
 def caesar_decrypt(text, offset):
     text = text.lower()
     decrypted = ""
@@ -22,5 +19,3 @@ def caesar_decrypt(text, offset):
         if char == " ":
             decrypted += " "
     return decrypted
-
-print(caesar_decrypt("mubsecu aetaet", 16))

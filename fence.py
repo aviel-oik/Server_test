@@ -10,9 +10,6 @@ def fence_encrypt_text(text : str):
             odd += text[i]
     return even + odd
 
-
-
-
 def fence_decrypt_text(text : str):
     text = text.lower()
     text = text.replace(' ', '')
