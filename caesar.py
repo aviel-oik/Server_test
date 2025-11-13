@@ -6,9 +6,11 @@ def caesar_encrypt(text, offset):
     for char in text:
         if char in alphabet:
             encrypted += alphabet[(alphabet.index(char) + offset) % len(alphabet)]
+        if char == " ":
+            encrypted += " "
     return encrypted
 
-# caesar_encrypt("abcde world", 27)
+print(caesar_encrypt("mubsecu aetaet", 16))
 
 
 def caesar_decrypt(text, offset):
@@ -17,6 +19,8 @@ def caesar_decrypt(text, offset):
     for char in text:
         if char in alphabet:
             decrypted += alphabet[(alphabet.index(char) - offset) % len(alphabet)]
+        if char == " ":
+            decrypted += " "
     return decrypted
 
-# caesar_decrypt("abcd", 1)
+print(caesar_decrypt("mubsecu aetaet", 16))

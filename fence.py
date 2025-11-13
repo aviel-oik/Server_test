@@ -1,4 +1,5 @@
-def fence_encrypt(text : str):
+def fence_encrypt_text(text : str):
+    print(text)
     text = text.lower()
     text = text.replace(' ', '')
     even = odd = ""
@@ -11,10 +12,8 @@ def fence_encrypt(text : str):
 
 
 
-print(fence_encrypt("abcde"))
 
-
-def fence_decrypt(text : str):
+def fence_decrypt_text(text : str):
     text = text.lower()
     text = text.replace(' ', '')
     if len(text) % 2 == 0:
@@ -35,7 +34,4 @@ def fence_decrypt(text : str):
 
 
 
-#bonjour mami
-print(fence_encrypt("bonjour mami"))
-print(fence_decrypt(fence_encrypt("bonjour mami")))
 
